@@ -12,7 +12,7 @@ brew install claude-i
 Verify:
 
 ```sh
-claude-i --version    # → claude-i 0.2.2
+claude-i --version    # → claude-i 0.2.3
 claude-i doctor       # 5/5 PASS
 ```
 
@@ -41,9 +41,9 @@ See the main repo at [rafaelscosta/claude-i](https://github.com/rafaelscosta/cla
 
 ## Formula
 
-The formula lives in [`Formula/claude-i.rb`](Formula/) and is updated on each `claude-i` release. Currently pinned to v0.2.2 (2026-05-19) — the first canonical release after the upstream IP-lock reversal.
+The formula lives in [`Formula/claude-i.rb`](Formula/) and is updated on each `claude-i` release. Currently pinned to v0.2.3 (2026-05-19) — the first canonical release after the upstream IP-lock reversal.
 
-The formula's `url` points at the [GitHub Release tarball](https://github.com/rafaelscosta/claude-i/releases/download/v0.2.2/claude_i-0.2.2.tar.gz). When PyPI Trusted Publisher is configured upstream, the url + sha256 can be flipped to `files.pythonhosted.org/...`. Until then, the GitHub Release tarball is the authoritative public source.
+The formula's `url` points at the [GitHub Release tarball](https://github.com/rafaelscosta/claude-i/releases/download/v0.2.3/claude_i-0.2.3.tar.gz). When PyPI Trusted Publisher is configured upstream, the url + sha256 can be flipped to `files.pythonhosted.org/...`. Until then, the GitHub Release tarball is the authoritative public source.
 
 ## License
 

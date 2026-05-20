@@ -3,10 +3,10 @@
 
 # claude-i — Like `claude -p`, but driven through an interactive Claude Code session.
 #
-# v0.2.2 — first canonical release after IP-lock reversal (2026-05-19).
+# v0.2.3 — Bug 6 (paste/Enter race) + Bug 9 (chat-title) fixes (2026-05-20).
 #
-# url    -> GitHub Release v0.2.2 sdist asset on rafaelscosta/claude-i (public).
-# sha256 -> sha256 of dist/claude_i-0.2.2.tar.gz built by `python -m build`.
+# url    -> GitHub Release v0.2.3 sdist asset on rafaelscosta/claude-i (public).
+# sha256 -> sha256 of dist/claude_i-0.2.3.tar.gz built by `python -m build`.
 #
 # If/when PyPI Trusted Publisher is configured and v0.2.2 is published to PyPI,
 # the url + sha256 can be flipped to the canonical files.pythonhosted.org artifact.
@@ -22,8 +22,8 @@ class ClaudeI < Formula
 
   desc "Like `claude -p`, driven through an interactive Claude Code session"
   homepage "https://github.com/rafaelscosta/claude-i"
-  url "https://github.com/rafaelscosta/claude-i/releases/download/v0.2.2/claude_i-0.2.2.tar.gz"
-  sha256 "f25d84f24916de2a8f6dc017169de71baea030b2b7e56a06e5e5a08e44719084"
+  url "https://github.com/rafaelscosta/claude-i/releases/download/v0.2.3/claude_i-0.2.3.tar.gz"
+  sha256 "ba7d4f6fcf7608c8681c0bfa2f14fd47c992f705d1211350988ebc967838513c"
   license "MIT"
 
   # Build + runtime deps.
@@ -38,6 +38,6 @@ class ClaudeI < Formula
 
   test do
     # `claude-i --version` must exit 0 and print the version string.
-    assert_match "claude-i 0.2.2", shell_output("#{bin}/claude-i --version")
+    assert_match "claude-i 0.2.3", shell_output("#{bin}/claude-i --version")
   end
 end
